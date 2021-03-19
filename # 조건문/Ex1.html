@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <input id="light_dark" type="button" value="dark"onclick="
+    if(document.querySelector('#light_dark').value === 'dark'){
+      document.querySelector('body').style.backgroundColor = 'black';
+      document.querySelector('body').style.color = 'white';
+      document.querySelector('#light_dark').value = 'light';
+    } else {
+      document.querySelector('body').style.backgroundColor = 'white';
+      document.querySelector('body').style.color = 'black';
+      document.querySelector('#light_dark').value = 'dark';
+    }
+    ">
+    <h1>Hello World</h1>
+  </body>
+</html>
