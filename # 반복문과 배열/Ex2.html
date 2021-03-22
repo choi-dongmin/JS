@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script>
+      var target_body = document.querySelector('body');
+    </script>
+    <h1> Countrys </h1>
+
+    <input type="button" value="dark" onclick="
+    if(this.value === 'dark'){
+      target_body.style.backgroundColor = 'black';
+      target_body.style.color = 'white';
+      this.value = 'light';
+
+      var alist =  document.querySelectorAll('a'); // NOTE: a Tag 모두를 선택해 배열로 만든다 그리고 alist 라는 값을 주어준다.
+      var i = 0;
+      while (i != alist.length) {
+        alist[i].style.color = 'powderblue';      // alist 의 스타일 컬러를 파우더 블루로 바꾼다.
+        i++;
+      }
+    } else {
+      target_body.style.backgroundColor = 'white';
+      target_body.style.color = 'black';
+      this.value = 'dark';
+
+      var alist =  document.querySelectorAll('a');
+      var i = 0;
+      while (i != alist.length) {
+        alist[i].style.color = 'blue';
+        i++;
+      }
+    }
+    ">
+    <h2>Hello World</h2>
+    <div class="countrys">
+      <ul>
+        <script>
+          var countrys_list = ['Korea','France','Japan'];
+          var i = 0;
+          while(i != countrys_list.length){
+            document.write('<li><a href="#">'+countrys_list[i]+'</a></li>');
+            i++;
+          }
+        </script>
+      </ul>
+      <script>
+        var i = 0;
+        while(i !=20){
+        document.write('This is array & roop example. ');
+        i++;
+        }
+      </script>
+    </div>
+  </body>
+</html>
