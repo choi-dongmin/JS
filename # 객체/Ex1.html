@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+    <h1>Object</h1>
+    <h2>Create</h2>
+    <script>
+      var coworkers ={
+        "programmer" : "lee",          // 객체 내에서 정보를 입력
+        "designer" : "choi"
+      };
+      document.write("programmer : "+ coworkers.programmer + "<br>"); // 객체내에서 입력한 값 불러오기
+      document.write("designer : "+ coworkers.designer + "<br>");
+
+      coworkers.scientist = "kim";                                    // 객체 밖에서 정보값을 입력
+      coworkers["first enginer"] = 'park';                            // 객체 밖에서 정보값을 입력(띄어쓰기)
+      document.write("scientist : "+ coworkers.scientist + "<br>");
+      document.write("first enginer : "+   coworkers["first enginer"] + "<br>");  // 객체 밖에서 입력한 값 불러오기
+    </script>
+  </body>
+</html>
