@@ -100,7 +100,7 @@ for in 문으로 객체안에 있는 값을 모두 불러오고 있다.
 ```
     <script>
     for(var i in coworkers){  // coworkers 안에 값을 i 에 변수에 순서대로 담아준다.
-      document.write(key+ ' : '+ coworkers[key] + ' <br>');
+      document.write(key+ ' : '+ coworkers[i] + ' <br>');
     }
     </script>
 ```
